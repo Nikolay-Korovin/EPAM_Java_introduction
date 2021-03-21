@@ -13,7 +13,7 @@ public class Task5 {
 		int min = sek / 60;
 		
 		
-		System.out.println(hou+"� "+min+"��� "+sek+"�.");
+		System.out.println(hou+"ч "+min+"мин "+sek+"сек.");
 
 	}
 
