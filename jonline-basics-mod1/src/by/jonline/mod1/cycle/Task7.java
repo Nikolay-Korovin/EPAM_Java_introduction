@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
-//m и n вводятся с клавиатуры.
+//Р”Р»СЏ РєР°Р¶РґРѕРіРѕ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРіРѕ С‡РёСЃР»Р° РІ РїСЂРѕРјРµР¶СѓС‚РєРµ РѕС‚ m РґРѕ n РІС‹РІРµСЃС‚Рё РІСЃРµ РґРµР»РёС‚РµР»Рё, РєСЂРѕРјРµ РµРґРёРЅРёС†С‹ Рё СЃР°РјРѕРіРѕ С‡РёСЃР»Р°.
+//m Рё n РІРІРѕРґСЏС‚СЃСЏ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹.
 
 public class Task7 {
 
@@ -16,30 +16,30 @@ public class Task7 {
 		int num;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("введите первое число промежутка натуральных чисел (целое положительное)");
+		System.out.println("РІРІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ РїСЂРѕРјРµР¶СѓС‚РєР° РЅР°С‚СѓСЂР°Р»СЊРЅС‹С… С‡РёСЃРµР» (С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ)");
 
 		try {
 			m = Integer.parseInt(reader.readLine());
 			if (m <= 0) {
-				System.out.println("целое положительное пожалуйста");
+				System.out.println("С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ РїРѕР¶Р°Р»СѓР№СЃС‚Р°");
 				return;
 			}
 		} catch (NumberFormatException e) {
-			System.out.println("целое положительное пожалуйста");
+			System.out.println("С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ РїРѕР¶Р°Р»СѓР№СЃС‚Р°");
 		} 
 
-		System.out.println("введите последнее число промежутка натуральных чисел (целое положительное)");
+		System.out.println("РІРІРµРґРёС‚Рµ РїРѕСЃР»РµРґРЅРµРµ С‡РёСЃР»Рѕ РїСЂРѕРјРµР¶СѓС‚РєР° РЅР°С‚СѓСЂР°Р»СЊРЅС‹С… С‡РёСЃРµР» (С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ)");
 
 		try {
 			n = Integer.parseInt(reader.readLine());
 			if (n <= 0) {
-				System.out.println("целое положительное пожалуйста");
+				System.out.println("С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ РїРѕР¶Р°Р»СѓР№СЃС‚Р°");
 				return;
 			} else if (n < m) {
-				System.out.println("последнее число промежутка должно быть больше его начального ");
+				System.out.println("РїРѕСЃР»РµРґРЅРµРµ С‡РёСЃР»Рѕ РїСЂРѕРјРµР¶СѓС‚РєР° РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ РµРіРѕ РЅР°С‡Р°Р»СЊРЅРѕРіРѕ ");
 			}
 		} catch (NumberFormatException e) {
-			System.out.println("целое положительное пожалуйста");
+			System.out.println("С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ РїРѕР¶Р°Р»СѓР№СЃС‚Р°");
 		} 
 		
 		reader.close();
@@ -49,7 +49,7 @@ public class Task7 {
 		int cycleN = m;
 		
 		for (int i = 0; i < num; i++) {
-			System.out.println("делители для: " + cycleN);
+			System.out.println("РґРµР»РёС‚РµР»Рё РґР»СЏ: " + cycleN);
 			for (int j = 2; j < cycleN; j++) {
 				if (cycleN % j == 0) {
 					System.out.println(":" + j);

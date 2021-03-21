@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//Íàïèøèòå ïğîãğàììó, ãäå ïîëüçîâàòåëü ââîäèò ëşáîå ÖÅËÎÅ ÏÎËÎÆÈÒÅËÜÍÎÅ ×ÈÑËÎ. À ïğîãğàììà ñóììèğóåò
-//âñå ÷èñëà îò 1 äî ââåäåííîãî ïîëüçîâàòåëåì ÷èñëà
+//ĞĞ°Ğ¿Ğ¸ÑˆĞ¸Ñ‚Ğµ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñƒ, Ğ³Ğ´Ğµ Ğ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒ Ğ²Ğ²Ğ¾Ğ´Ğ¸Ñ‚ Ğ»ÑĞ±Ğ¾Ğµ Ğ¦Ğ•Ğ›ĞĞ• ĞŸĞĞ›ĞĞ–Ğ˜Ğ¢Ğ•Ğ›Ğ¬ĞĞĞ• Ğ§Ğ˜Ğ¡Ğ›Ğ. Ğ Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ° ÑÑƒĞ¼Ğ¼Ğ¸Ñ€ÑƒĞµÑ‚
+//Ğ²ÑĞµ Ñ‡Ğ¸ÑĞ»Ğ° Ğ¾Ñ‚ 1 Ğ´Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ½Ğ¾Ğ³Ğ¾ Ğ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ĞµĞ¼ Ñ‡Ğ¸ÑĞ»Ğ°
 
 public class Task1 {
 
@@ -16,17 +16,17 @@ public class Task1 {
 		int a = 0;
 		int b = 0;
 
-		System.out.println("Ââåäèòå öåëîå ïîëîæèòåëüíîå ÷èñëî >> ");
+		System.out.println("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ†ĞµĞ»Ğ¾Ğµ Ğ¿Ğ¾Ğ»Ğ¾Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ >> ");
 
 		try {
 			a = Integer.parseInt(reader.readLine());
 			if (a <= 0) {
-				System.out.println("Ââåäèòå öåëîå ïîëîæèòåëüíîå ÷èñëî");
+				System.out.println("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ†ĞµĞ»Ğ¾Ğµ Ğ¿Ğ¾Ğ»Ğ¾Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾");
 				return;
 			}
 			reader.close();
 		} catch (NumberFormatException e) {
-			System.out.println("Ââåäèòå öåëîå ïîëîæèòåëüíîå ÷èñëî");
+			System.out.println("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ†ĞµĞ»Ğ¾Ğµ Ğ¿Ğ¾Ğ»Ğ¾Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾");
 			return;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -38,7 +38,7 @@ public class Task1 {
 
 		}
 
-		System.out.println("Ñóììà âñåõ ÷èñåë îò 1 äî " + a + " = " + b);
+		System.out.println("Ğ¡ÑƒĞ¼Ğ¼Ğ° Ğ²ÑĞµÑ… Ñ‡Ğ¸ÑĞµĞ» Ğ¾Ñ‚ 1 Ğ´Ğ¾ " + a + " = " + b);
 
 	}
 

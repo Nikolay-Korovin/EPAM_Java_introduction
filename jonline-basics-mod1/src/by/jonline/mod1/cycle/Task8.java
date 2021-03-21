@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//Даны два числа.Определить цифры,входящие в запись как первого так и второго числа.
+//Р”Р°РЅС‹ РґРІР° С‡РёСЃР»Р°.РћРїСЂРµРґРµР»РёС‚СЊ С†РёС„СЂС‹,РІС…РѕРґСЏС‰РёРµ РІ Р·Р°РїРёСЃСЊ РєР°Рє РїРµСЂРІРѕРіРѕ С‚Р°Рє Рё РІС‚РѕСЂРѕРіРѕ С‡РёСЃР»Р°.
 
 public class Task8 {
 
@@ -14,16 +14,16 @@ public class Task8 {
 		int b = 0;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("введите два целых положительных числа");
+		System.out.println("РІРІРµРґРёС‚Рµ РґРІР° С†РµР»С‹С… РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… С‡РёСЃР»Р°");
 
 		try {
 			a = Integer.parseInt(reader.readLine());
 			if (a <= 0) {
-				System.out.println("Введите целое положительное число");
+				System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 		} catch (NumberFormatException e) {
-			System.out.println("Введите целое положительное число");
+			System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
 			return;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -32,12 +32,12 @@ public class Task8 {
 		try {
 			b = Integer.parseInt(reader.readLine());
 			if (b <= 0) {
-				System.out.println("Введите целое положительное число");
+				System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			reader.close();
 		} catch (NumberFormatException e) {
-			System.out.println("Введите целое положительное число");
+			System.out.println("Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
 			return;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -54,7 +54,7 @@ public class Task8 {
 				quotientB = numberOfNumbers % 10;
 				numberOfNumbers /= 10;
 				if (quotientA == quotientB) {
-					System.out.println(quotientA + " входит в запись как первого так и второго числа");
+					System.out.println(quotientA + " РІС…РѕРґРёС‚ РІ Р·Р°РїРёСЃСЊ РєР°Рє РїРµСЂРІРѕРіРѕ С‚Р°Рє Рё РІС‚РѕСЂРѕРіРѕ С‡РёСЃР»Р°");
 					break;
 				}
 			}

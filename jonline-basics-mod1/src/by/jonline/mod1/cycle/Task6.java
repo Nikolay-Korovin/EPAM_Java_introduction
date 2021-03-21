@@ -10,7 +10,7 @@ public class Task6 {
 
 		char b = (char) i;
 
-		System.out.println("Символу " + b + " соответствует цифра " + i);
+		System.out.println("РЎРёРјРІРѕР»Сѓ " + b + " СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С†РёС„СЂР° " + i);
 
 		}
 

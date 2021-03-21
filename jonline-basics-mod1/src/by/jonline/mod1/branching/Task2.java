@@ -1,6 +1,6 @@
 package by.jonline.mod1.branching;
 
-//. Найти max{min(a, b), min(c, d)}.
+//. РќР°Р№С‚Рё max{min(a, b), min(c, d)}.
 
 public class Task2 {
 

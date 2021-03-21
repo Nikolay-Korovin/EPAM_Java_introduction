@@ -1,6 +1,6 @@
 package by.jonline.mod1.branching;
 
-//Вычислить значение функции. f(x)
+//Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё. f(x)
 
 public class Task5 {
 
