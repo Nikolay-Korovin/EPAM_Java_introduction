@@ -1,11 +1,10 @@
 package by.jonline.mod2.decomposition;
 
 import java.util.Arrays;
-import java.util.Random;
 
 //12. Даны натуральные числа К и N. Написать метод(методы) формирования массива А, элементами которого
 //являются числа, сумма цифр которых равна К и которые не большее N.
-
+//НЕ ДОДЕЛАНО
 public class Task12 {
 
 	public static void main(String[] args) {
@@ -23,7 +22,6 @@ public class Task12 {
 		int[] array = new int[arrLeng]; // размер требуемого массива явно не указан, по этому берём например 10
 		int[][] sourceArr = numberGenerator(k, n);
 		System.out.println(Arrays.deepToString(sourceArr));
-		Random random = new Random();
 		int counter = 0;
 		while (counter != array.length) {
 
