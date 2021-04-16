@@ -11,26 +11,36 @@ public class Task3 {
 
 	public static void main(String[] args) {
 
-		int[] array = { 10, 11, 12, 13, 14, 15 };
-		System.out.println(Arrays.toString(array));
+		int[] array = { 64, 42, 73, 41, 32, 53, 16, 24, 57, 42, 74, 55, 36 };
+		// System.out.println(Arrays.toString(array));
 
-		for (int left = 0; left < array.length; left++) {
-			int minInd = left;
-			for (int i = left; i < array.length; i++) {
-				if (array[i] > array[left]) {
-					minInd = i;
-				}
-			}
-			swap(array, left, minInd);
-		}
-		System.out.println(Arrays.toString(array));
+		choiceSort(array);
+
+		// System.out.println(Arrays.toString(array));
 
 	}
 
-	public static void swap(int[] arr, int ind1, int ind2) {
-		int temp = arr[ind1];
-		arr[ind1] = arr[ind2];
-		arr[ind2] = temp;
+	public static void choiceSort(int[] array) {
+		for (int step = 0; step < array.length; step++) {
+			System.out.println(Arrays.toString(array));
+			int minIndex = min(array, step);
+
+			int tmp = array[step];
+			array[step] = array[minIndex];
+			array[minIndex] = tmp;
+		}
+	}
+
+	public static int min(int[] array, int start) {
+		int minIndex = start;
+		int minValue = array[start];
+		for (int i = start + 1; i < array.length; i++) {
+			if (array[i] < minValue) {
+				minValue = array[i];
+				minIndex = i;
+			}
+		}
+		return minIndex;
 	}
 
 }

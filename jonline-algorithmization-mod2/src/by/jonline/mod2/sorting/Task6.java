@@ -3,36 +3,34 @@ package by.jonline.mod2.sorting;
 import java.util.Arrays;
 
 //Сортировка Шелла. Дан массив n действительных чисел. Требуется упорядочить его по возрастанию.
-//Делается это следующим образом: сравниваются два соседних элемента ai и ai+1 . Если ai < ai+1, то продвигаютсяна один элемент вперед.
-//Если ai > ai+1, то производится перестановка и сдвигаются на один элемент назад. Составить алгоритм этой сортировки.
+// Составить алгоритм этой сортировки.
 
-//подглядывал, разобрать подробно ещё раз
 public class Task6 {
 
 	public static void main(String[] args) {
-		double temp;
-		double[] arr = { 4, 5, 2, 1 };
-		System.out.println("Дан массив");
+
+		int[] arr = { 5, 4, 3, 2, 1 };
+
 		System.out.println(Arrays.toString(arr));
 
-		for (int i = 0; i < arr.length - 1; i++) {
-			if (arr[i] > arr[i + 1]) {
-				temp = arr[i];
-				arr[i] = arr[i + 1];
-				arr[i + 1] = temp;
-				for (int j = i-1; j > -1; j--) {
-					if (arr[j] > arr[j + 1]) {
-						temp = arr[j];
-						arr[j] = arr[j + 1];
-						arr[j + 1] = temp;
-					}
-					else break;
+		shellSort(arr);
+
+		System.out.println(Arrays.toString(arr));
+
+	}
+
+	public static void shellSort(int[] array) {
+		int step = array.length / 2;    												//значение шага 
+		for (; step > 0;) { 															//до тех пор пока длина шага больше чем ноль
+			for (int i = step; i < array.length; i++) {									//проход  от индекса равного шагу до конца массива( с шагом в 1 )
+				for (int j = i; j >= step && array[j] < array[j - step]; j -= step) { 	//до тех пор пока j больше или равно шагу и jэлемент меньше jэлемент-шаг 
+					int tmp = array[j];												 	//и на каждой итерации j уменьшается на шаг
+					array[j] = array[j - step];											//меняем местами элементы на j и на j-шаг
+					array[j - step] = tmp;
 				}
 			}
+			step = step / 2;															//уменьшаем шаг в 2 раза
 		}
-
-		System.out.println("Получен массив");
-		System.out.println(Arrays.toString(arr));
 	}
 
 }
