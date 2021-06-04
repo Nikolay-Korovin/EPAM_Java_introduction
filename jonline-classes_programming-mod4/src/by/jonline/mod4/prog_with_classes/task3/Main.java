@@ -15,7 +15,7 @@ public class Main {
 		for (int i = 0; i < student.length; i++) {
 			performance = new int[5];
 			for (int j = 0; j < performance.length; j++) {
-				performance[j] = (int) Math.round(Math.random() * 2 + 8); // интересный вариант генерации от и до
+				performance[j] = (int) Math.round(Math.random() * 2 + 8); // вариант генерации от и до
 			}
 
 			student[i] = new Student("Student" + i, 10 + i, performance);

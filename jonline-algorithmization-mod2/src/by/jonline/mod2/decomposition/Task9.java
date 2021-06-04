@@ -13,9 +13,9 @@ public class Task9 {
 		double t;
 
 		x = 4;
-		y = 3;
-		z = 4;
-		t = 2;
+		y = 4;
+		z = 5;
+		t = 1;
 
 		System.out.println(areaRectangle(x, y, z, t));
 
@@ -34,7 +34,7 @@ public class Task9 {
 
 	public static double findDiagonal(double x, double y) {
 		double diagonal = 0;
-		diagonal = Math.pow(Math.sqrt(x) + Math.sqrt(y), 2.0);
+		diagonal = Math.sqrt(x * x + y * y);
 		return diagonal;
 	}
 
@@ -44,8 +44,7 @@ public class Task9 {
 		double TriangleArea;
 
 		halfPerimeter = (diagonal + a + b) / 2;
-		TriangleArea = Math.pow(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - diagonal),
-				2);
+		TriangleArea = Math.sqrt(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - diagonal));
 		return TriangleArea;
 	}
 
